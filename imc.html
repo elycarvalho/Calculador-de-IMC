@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>imc</title>
+	
+</head>
+<body>
+	<div id="informativo">
+    <p>O <strong>IMC</strong> (Índice de Massa Corporal) é uma medida utilizada para medir a obesidade adotada pela Organização Mundial de Saúde (OMS). É o padrão internacional para avaliar o grau de obesidade.
+    </p>
+    <br>
+    <p>
+    O sobrepeso e a obesidade, indicados pelo IMC, são fatores de risco para doenças tais como a hipertensão arterial, a doença arterial coronariana e o diabetes melittus, além de outras patologias consideradas de alto risco para a Saúde Pública.
+    </p>
+    <br>
+    <p>
+    Hoje em dia, o IMC é utilizado como forma de comparar a saúde de populações, ou até mesmo definir prescrição de medicações.
+    </p>
+    <br>
+    <p>
+    Os valores de IMC são independentes de idade e sexo. Apesar disso, o IMC pode não corresponder ao mesmo grau de gordura em diferentes populações devido às diferentes proporções do corpo.
+    </p>
+    <br>
+    <p>
+    Riscos à saúde associados ao aumento do IMC devem ser constantemente observados e interpretados, já que podem ser diferentes em cada população.
+    </p>
+    <button class="botao" id="fechaInfo">Fechar</button>
+	</div>
+
+	<div class="formulario">
+		<h1>Calcule seu IMC</h1>
+		<p>Altura em centímetros</p>
+	  <input type="number" id="altura" required>
+	  <p>Peso em Kg</p>
+	  <input type="number" id="peso">
+	  <button class="botao" id="btnCalcular">calcular</button>
+  </div>
+
+  <div id="telaResultado" style="display:none">
+  	<h2>Seu IMC é:<span id="mostraResultado"></span></h2>
+    <p id="explicativo"></p>
+    <button class="botao" id="btnRecalcula">Recalcular</button>
+  </div>
+
+  <footer>&copy; by Ely Carvalho</footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
