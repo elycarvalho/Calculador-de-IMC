@@ -15,13 +15,13 @@ fechaInfo.addEventListener('click', () => {
 })
 
 btnCalcula.addEventListener('click', () => {
-  if (altura.value !== '' && peso.value !== '') {
-	  resultado = (peso.value / Math.pow(altura.value, 2) * 10000).toFixed(1)
-    console.log(resultado)
+  const alturaConvert = altura.value * 100
+  if (alturaConvert !== '' && peso.value !== '') {
+	  resultado = (peso.value / Math.pow(alturaConvert, 2) * 10000).toFixed(1)
     telaFinal()
   } else {
   	  alert(
-  	  	`Para calcular digite sua altura em centimetros (Exemplo: 1,5 metros => 150 centimetros) e o peso em quilogramas (kg).`
+  	  	`Para calcular digite sua altura (Exemplo: 1 metro e 70 centimetros => digite 1.70) e o peso em quilogramas (kg).`
   	  	)
   	}
 })
